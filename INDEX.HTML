@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Smart Todo App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= Welcome Screen ================= -->
+
+<div id="welcomePage">
+
+    <div class="welcomeCard">
+
+        <h1>✨ Welcome Shraddha ✨</h1>
+
+        <p>
+            Organize your day.<br>
+            Stay productive.<br>
+            Achieve your goals.
+        </p>
+
+        <button id="startBtn">
+            Start Planning
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= Main App ================= -->
+
+<div class="container hidden" id="app">
+
+    <!-- Header -->
+
+    <header>
+
+        <div>
+
+            <h1>TaskFlow</h1>
+
+            <p>Plan Today. Achieve Tomorrow.</p>
+
+        </div>
+
+        <div class="dateTime">
+
+            <h2 id="time"></h2>
+
+            <p id="date"></p>
+
+        </div>
+
+    </header>
+
+    <!-- Greeting -->
+
+    <div class="greeting">
+
+        <h2 id="greetingText">
+            Hello Shraddha 👋
+        </h2>
+
+        <p>
+            Stay focused and make today productive!
+        </p>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+        <div class="card">
+
+            <h3>Total</h3>
+
+            <span id="totalTasks">0</span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Completed</h3>
+
+            <span id="completedTasks">0</span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Pending</h3>
+
+            <span id="pendingTasks">0</span>
+
+        </div>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="searchBox">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search tasks..."
+        >
+
+    </div>
+
+    <!-- Input -->
+
+    <div class="inputBox">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task..."
+        >
+
+        <button id="addBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add
+
+        </button>
+
+    </div>
+
+    <!-- Task List -->
+
+    <div class="taskSection">
+
+        <h2>Your Tasks</h2>
+
+        <ul id="taskList">
+
+        </ul>
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div id="emptyState">
+
+        <i class="fa-solid fa-list-check"></i>
+
+        <h2>No Tasks Yet</h2>
+
+        <p>
+            Start by adding your first task.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
